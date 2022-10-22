@@ -1,8 +1,5 @@
-function greet(name: string | null) {
-    if (name === null) {
-        throw new Error("Name is required");
-    }
-    return `Hello ${name}`;
-}
+let speed: number | null = null;
 
-greet("Awais");
+let ride = {
+     speed: speed ?? 30;
+}
