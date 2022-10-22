@@ -1,3 +1,3 @@
-let sales: number = 123_456_789;
-let course: string = 'TypeScript';
-let is_active: boolean = true;
+let numbers: number[] = [1, 2, 3, 4, 5];
+
+numbers.forEach(n => n.toFixed(2));
