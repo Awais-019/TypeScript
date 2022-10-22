@@ -1,13 +1,8 @@
-type Student = {
-    readonly id: number;
-    name: string;
-    retire: (data: Date) => void;
-};
-
-let student: Student = {
-    id: 19,
-    name: "Awais",
-    retire: (date: Date) => {
-        console.log(date);
-    },
-};
+function kgtoLbs(weight: number | string): number {
+    // narrowing
+    if (typeof weight == "number") {
+        return weight * 2.20462;
+    } else {
+        return parseInt(weight) * 2.20462;
+    }
+}
