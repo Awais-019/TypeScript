@@ -1,4 +1,8 @@
-type Quantity = 50 | 100;
-let quantity: Quantity = 50;
+function greet(name: string | null) {
+    if (name === null) {
+        throw new Error("Name is required");
+    }
+    return `Hello ${name}`;
+}
 
-type metric = "cm" | "inch";
+greet("Awais");
