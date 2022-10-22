@@ -1,3 +1,7 @@
-// let phone = document.getElementById('phone') as HTMLInputElement;
-let phone = <HTMLInputElement> document.getElementById('phone')
-phone.value
+function render(document: unknown) {
+     // narrowing
+     if (document instanceof WordDocument) {
+         document.render();
+     }
+     
+}
