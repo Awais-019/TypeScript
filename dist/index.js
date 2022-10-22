@@ -1,5 +1,4 @@
 "use strict";
-let student = [19, 'Awais'];
-student[0];
-student[1];
+const mySize = 2;
+console.log(mySize);
 //# sourceMappingURL=index.js.map
