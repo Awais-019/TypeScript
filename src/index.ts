@@ -1,3 +1,3 @@
-let numbers: number[] = [1, 2, 3, 4, 5];
-
-numbers.forEach(n => n.toFixed(2));
+let student: [number, string] = [19, 'Awais'];
+student[0]
+student[1]

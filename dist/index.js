@@ -1,5 +1,5 @@
 "use strict";
-let sales = 123456789;
-let course = 'TypeScript';
-let is_active = true;
+let student = [19, 'Awais'];
+student[0];
+student[1];
 //# sourceMappingURL=index.js.map
