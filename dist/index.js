@@ -10,11 +10,11 @@ class Account {
             throw new Error("Invalid Amount");
         this._balance += amount;
     }
-    getBalance() {
+    get balance() {
         return this._balance;
     }
 }
 let account = new Account(0, "Awais", 0);
 account.deposit(100);
-console.log(account instanceof Account);
+console.log(account.balance);
 //# sourceMappingURL=index.js.map
