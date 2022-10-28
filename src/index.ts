@@ -1,14 +1,11 @@
 class Account {
-    readonly id: number;
-    name: string;
-    private _balance: number;
     nickname?: string;
 
-    constructor(id: number, name: string, balance: number) {
-        this.id = id;
-        this.name = name;
-        this._balance = balance;
-    }
+    constructor(
+        public readonly id: number,
+        public name: string,
+        private _balance: number
+    ) {}
 
     deposit(amount: number): void {
         if (amount <= 0) throw new Error("Invalid Amount");
@@ -20,6 +17,6 @@ class Account {
     }
 }
 
-let account = new Account(0, 'Awais', 0);
+let account = new Account(0, "Awais", 0);
 account.deposit(100);
 console.log(account instanceof Account);

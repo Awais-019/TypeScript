@@ -1,9 +1,9 @@
 "use strict";
 class Account {
-    constructor(id, name, balance) {
+    constructor(id, name, _balance) {
         this.id = id;
         this.name = name;
-        this._balance = balance;
+        this._balance = _balance;
     }
     deposit(amount) {
         if (amount <= 0)
@@ -14,7 +14,7 @@ class Account {
         return this._balance;
     }
 }
-let account = new Account(0, 'Awais', 0);
+let account = new Account(0, "Awais", 0);
 account.deposit(100);
 console.log(account instanceof Account);
 //# sourceMappingURL=index.js.map
