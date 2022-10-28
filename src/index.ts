@@ -20,4 +20,8 @@ class Student extends Person {
     }
 }
 
-let student = new Student(1, "Muhammad", "Awais");
+class Teacher extends Person {
+    override get fullName() {
+        return "Professor " + super.fullName;
+    }
+}
