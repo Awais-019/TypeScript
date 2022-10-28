@@ -1,10 +1,17 @@
 "use strict";
-function kgtoLbs(weight) {
-    if (typeof weight == "number") {
-        return weight * 2.20462;
+class Account {
+    constructor(id, name, balance) {
+        this.id = id;
+        this.name = name;
+        this.balance = balance;
     }
-    else {
-        return parseInt(weight) * 2.20462;
+    deposit(amount) {
+        if (amount <= 0)
+            throw new Error("Invalid Amount");
+        this.balance += amount;
     }
 }
+let account = new Account(0, 'Awais', 0);
+account.deposit(100);
+console.log(account instanceof Account);
 //# sourceMappingURL=index.js.map
