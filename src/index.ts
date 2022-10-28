@@ -1,11 +1,19 @@
-abstract class Shape {
-    constructor(public color: string) {}
-
-    abstract render(): void;
+interface Calender {
+    name: string;
+    addEvent(): void;
+    removeEvent(): void;
 }
 
-class Circle extends Shape {
-    constructor(public radius: number, color: string) {
-        super(color);
+interface CloundCalender extends Calender {
+    sync(): void;
+}
+
+class GoogleCalnder implements Calender {
+    constructor(public name: string) {}
+    addEvent(): void {
+        throw new Error("Method not implemented.");
+    }
+    removeEvent(): void {
+        throw new Error("Method not implemented.");
     }
 }
