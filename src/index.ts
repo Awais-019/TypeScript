@@ -25,3 +25,12 @@ class Teacher extends Person {
         return "Professor " + super.fullName;
     }
 }
+
+printNames([
+    new Student(1, "Muhammad", "Awais"),
+    new Teacher("Mosh", "Hamedani"),
+]);
+
+function printNames(people: Person[]) {
+    for (let person of people) console.log(person.fullName);
+}
