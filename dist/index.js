@@ -1,8 +1,6 @@
 "use strict";
-class ArrayUtils {
-    static wrapInArray(value) {
-        return [value];
-    }
+function fetch() {
+    return { data: null, error: null };
 }
-let numbers = ArrayUtils.wrapInArray("1");
+let result = fetch();
 //# sourceMappingURL=index.js.map
