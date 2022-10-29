@@ -1,18 +1,3 @@
-interface Result<T> {
-    data: T | null;
-    error: string | null;
+function echo<T>(value: T extends { name: string }): T {
+  return value;
 }
-
-function fetch<T>(): Result<T> {
-    return { data: null, error: null };
-}
-
-interface User {
-    name: string;
-}
-
-interface Product {
-    title: string;
-}
-
-let result = fetch<User>();
